@@ -1,7 +1,7 @@
 function propertyList(obj) {
 
-    for (let key in obj) {
-        console.log(key)
+    for (let keys in obj) {
+        console.log(keys)
     }
 }
 
@@ -16,7 +16,7 @@ propertyList(student)
 
 function deleteProperty(obj) {
     for (let key in obj) {
-        if (key == "rollno") {
+        if (key === "rollno") {
             delete obj.rollno;
             // delete obj.key // isn't they the same
             console.log(obj)
